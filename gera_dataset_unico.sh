@@ -341,16 +341,16 @@ sed -i '1i\Filename;ClassId\' lixo1
 sed 's/;0000/;/' lixo1 > lixo2
 sed 's/;000/;/' lixo2 > BC-final_testeBC.csv
 
-grep '/b' BC-final_testeBC.csv > BT-final_testeB.csv
-sed -i '1i\Filename;ClassId\' BT-final_testeB.csv
-grep '/c' BC-final_testeBC.csv > rM-final_testeC.csv
-sed -i '1i\Filename;ClassId\' rM-final_testeC.csv
+grep '/b' BC-final_testeBC.csv > BelgaB.csv
+sed -i '1i\Filename;ClassId\' BelgaB.csv
+grep '/c' BC-final_testeBC.csv > CroataC.csv
+sed -i '1i\Filename;ClassId\' CroataC.csv
 
-sed 's/.\/Testing\///' BT-final_testeB.csv > lixo
-mv lixo BT-final_testeB.csv
+sed 's/.\/Testing\///' BelgaB.csv > lixo
+mv lixo BelgaB.csv
 
-sed 's/.\/Testing\///' rM-final_testeC.csv > lixo
-mv lixo rM-final_testeC.csv
+sed 's/.\/Testing\///' CroataC.csv > lixo
+mv lixo CroataC.csv
 
 rm lixo lixo1 lixo2 saida saida1
 

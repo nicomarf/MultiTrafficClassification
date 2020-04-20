@@ -19,12 +19,12 @@ criados os subdiretorios "Training" e "Testing" onde foram feitos os downloads d
 O treinamento individual foi feito entrando em cada diretorio de cada país usando a seguinte sintaxe:  
 python T_pais.py <pais.csv> <num_classes> <batch_size>
 "pais.csv" corresponde ao arquivo csv que contem como imagens e suas classes correspondentes ao conjunto de dados de teste deste país.
-        Alemão=GT-final_teste.csv, Belga=BT-final_teste.csv, Croata=rM-final_teste.csv        
+        Alemão=Alemao.csv, Belga=Belga.csv, Croata=Croata.csv        
  num_classes corresponde ao número de classes deste país. (Alemão=43, Belga=62, Croata=31)
  batch_size corresponde ao tamanho do lote que deseja consultar.
 
 Exemplo: para o treino do conjunto de dados alemão que contem 43 classes e deseja executar com lote = 48.
-python T_pais.py GT-final_teste.csv 43 48
+python T_pais.py Alemao.csv 43 48
 
 2) Treinamento combinado simples
 
@@ -45,9 +45,9 @@ Para fazer este treinamento foi criado um dataset unico a partir do script gera_
 
 Para executar o treinamento a sintaxe de para cada país é:
 cd AlemaoBelgaCroata/Alemao
-Alemao : python T_AlBeCr.py   GT-final_teste.csv  88 <batch_size>
-Belga:   python T_AlBeCr.py   BT-final_testeB.csv 88 <batch_size>
-Croata:  python T_AlBeCr.py   rM-final_testeC.csv 88 <batch_size>
+Alemao : python T_AlBeCr.py   Alemao.csv  88 <batch_size>
+Belga:   python T_AlBeCr.py   BelgaB.csv  88 <batch_size>
+Croata:  python T_AlBeCr.py   CroataC.csv 88 <batch_size>
 
 
 --------------------------------------FIM GIT---------------------------
